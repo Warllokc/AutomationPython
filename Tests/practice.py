@@ -8,6 +8,8 @@ def test_file1_method1():
 
 @pytest.mark.set1
 def test_file1_method2():
+	myTest= 31
+	print(myTest)
 	x=5
 	y=6
 	assert x+1 == y, "test failed"

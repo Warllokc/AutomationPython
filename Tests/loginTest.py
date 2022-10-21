@@ -1,4 +1,4 @@
-import automation.Tests.test_config as conf
+import automation.WebAutomation.Tests.test_config as conf
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC

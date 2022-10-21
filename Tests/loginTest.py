@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+import automation.WebAutomation.Pages.HomePageLocators as homePageLocators
+import automation.WebAutomation.Pages.LoginLocators as loginLocators
 
 
 def test_open_page():
@@ -14,18 +16,18 @@ def test_open_page():
 def test_login():
     try:
         UsernameTextField = WebDriverWait(conf.browser, 2).until(EC.presence_of_element_located(
-            (By.XPATH, LoginLocators.UsernameTextField)))
+            (By.XPATH, loginLocators.UsernameTextField)))
         UsernameTextField.send_keys(conf.username)
 
         PasswordTextField = WebDriverWait(conf.browser, 2).until(EC.presence_of_element_located(
-            (By.XPATH, LoginLocators.PasswordTextField)))
+            (By.XPATH, loginLocators.PasswordTextField)))
         PasswordTextField.send_keys(conf.password)
 
         LoginButton = WebDriverWait(conf.browser, 2).until(EC.presence_of_element_located(
-            (By.XPATH, LoginLocators.LoginButton)))
+            (By.XPATH, loginLocators.LoginButton)))
         LoginButton.click()
 
-        LandingPageLoggedUserName = conf.browser.find_element(By.XPATH, HomePageLocators.LandingPageLoggedUserName).text
+        LandingPageLoggedUserName = conf.browser.find_element(By.XPATH, homePageLocators.LandingPageLoggedUserName).text
         assert LandingPageLoggedUserName == conf.userName
 
         conf.browser.quit()

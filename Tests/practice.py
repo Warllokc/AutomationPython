@@ -8,7 +8,8 @@ def test_file1_method1():
 
 @pytest.mark.set1
 def test_file1_method2():
-	c=0
+	test = 2
+	print(test)
 	x=5
 	y=6
 	print(c)

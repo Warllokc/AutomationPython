@@ -12,5 +12,4 @@ def test_file1_method2():
 	print(test)
 	x=5
 	y=6
-	print(c)
 	assert x+1 == y, "test failed"

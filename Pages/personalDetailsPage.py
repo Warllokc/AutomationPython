@@ -1,0 +1,1 @@
+personalDetails = '//*[@class="oxd-text oxd-text--h6 orangehrm-main-title"]'

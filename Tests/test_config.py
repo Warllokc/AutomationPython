@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-browser = webdriver.Chrome('/automation/WebAutomation/Pages/chromedriver')
+browser = webdriver.Chrome('/Users/alexandrpetricenco/Desktop/Python_tricks/automation/WebAutomation/Pages/chromedriver')
 
 URL = 'https://opensource-demo.orangehrmlive.com/'
 logi_icon_css = "#divLogo"
@@ -14,4 +14,4 @@ page_title = "OrangeHRM"
 username = 'Admin'
 password = 'admin123'
 
-userName = 'Paul Collings'
+LandingPageConfiguration = 'Configuration'

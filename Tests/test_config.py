@@ -1,4 +1,5 @@
 from selenium import webdriver
+from random import randint
 
 browser = webdriver.Chrome('/Users/alexandrpetricenco/Desktop/Python_tricks/automation/WebAutomation/Pages/chromedriver')
 
@@ -15,3 +16,13 @@ username = 'Admin'
 password = 'admin123'
 
 LandingPageConfiguration = 'Configuration'
+EmployeeFullNameText = "Employee Full Name"
+
+newUserFirstName = 'Iulian'
+newUserLastName = 'Bondari'
+
+employeeInformationText = 'Employee Information'
+
+personalDetailsText = 'Personal Details'
+
+employeeID = str(randint(200, 10000))

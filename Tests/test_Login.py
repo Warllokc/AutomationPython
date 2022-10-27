@@ -27,8 +27,8 @@ def test_login():
             (By.XPATH, loginLocators.LoginButton)))
         LoginButton.click()
 
-        LandingPageLoggedUserName = conf.browser.find_element(By.XPATH, homePageLocators.LandingPageLoggedUserName).text
-        assert LandingPageLoggedUserName == conf.userName
+        LandingPageLoggedUserName = conf.browser.find_element(By.XPATH, homePageLocators.LandingPageConfiguration).text
+        assert LandingPageLoggedUserName == conf.LandingPageConfiguration
 
         conf.browser.quit()
 

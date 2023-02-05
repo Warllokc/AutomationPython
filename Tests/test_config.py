@@ -1,7 +1,7 @@
 from selenium import webdriver
 from random import randint
 
-browser = webdriver.Chrome('/Users/alexandrpetricenco/Desktop/Python_tricks/automation/WebAutomation/Pages/chromedriver')
+browser = webdriver.Chrome('<path to your chromedriver>')
 
 URL = 'https://opensource-demo.orangehrmlive.com/'
 logi_icon_css = "#divLogo"
@@ -15,7 +15,7 @@ page_title = "OrangeHRM"
 username = 'Admin'
 password = 'admin123'
 
-LandingPageConfiguration = 'Configuration'
+LandingPageDashboard = 'Dashboard'
 EmployeeFullNameText = "Employee Full Name"
 
 newUserFirstName = 'Iulian'

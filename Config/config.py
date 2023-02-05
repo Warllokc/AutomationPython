@@ -1,6 +1,6 @@
 
 class TestData:
-    CHROME_EXECUTABLE_PATH = '/automation/Pages/chromedriver'
+    CHROME_EXECUTABLE_PATH = '/AutomationPython/Pages/chromedriver'
 
     BASE_URL = "https://opensource-demo.orangehrmlive.com/"
     USERNAME = "Admin"

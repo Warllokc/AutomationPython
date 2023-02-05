@@ -4,7 +4,8 @@
 2. To be able to inspect elements and use Xpath add ```ChroPath```extension to your Chrome
 3. In `Tests/test_config.py` file make sure ```browser``` variable is showing right path to chromedriver
 4. Navigate to ```Test``` folder
-5. To tun the tests and generate html report:
+5. Install all dependencies ```pip install -r requirements.txt``` 
+6. To tun the tests and generate html report:
 ```pytest --html=report.html test_Login.py ```
 # Note
 In Pages folder are  located all the elements for specific page ex:
@@ -15,3 +16,6 @@ in Pages folderwith the locators
 results
 - Currently is saving ```screenshots``` on each step executed, NOT implemented yet to add screenshots 
 to the report.
+
+---
+- To freeze your dependencies use this command ```pip3 freeze > requirements.txt ```

@@ -10,7 +10,7 @@
 # Note
 In Pages folder are  located all the elements for specific page ex:
 ```HomePage.py```, ```LoginPage.py``` if you want to add locators for new pagepleas add ```new file```
-in Pages folderwith the locators
+in Pages folder with the locators
 
 - Test will generate ```report.html``` file, copy file path and insert into browser to see the test 
 results
